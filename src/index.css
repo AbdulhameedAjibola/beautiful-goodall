@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #FBFBFA;
+  --text-main: #121212;
+  --text-muted: #68655E;
+  --card-bg: #FFFFFF;
+  --border-color: #E8E6E1;
+}
+
+.dark {
+  --bg-main: #0c0e0b;
+  --text-main: #f5f6f2;
+  --text-muted: #9da496;
+  --card-bg: #161914;
+  --border-color: #282f25;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Sora', sans-serif;
+}
+
+.badge-pill {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.01em;
+}
+
+/* Hide scrollbar for clean UI if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
