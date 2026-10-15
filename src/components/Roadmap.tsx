@@ -5,16 +5,10 @@ export const Roadmap: React.FC = () => {
   return (
     <section className="py-20 md:py-28 bg-[#FBFBFA] dark:bg-dark-bg transition-colors" id="coming-soon">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
-        <div className="text-left max-w-2xl mb-14">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-gold font-mono">
-            The Levo Roadmap
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text mt-2 mb-4 leading-tight">
+        <div className="text-left max-w-2xl mb-10">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text leading-tight">
             What's next for Levo
           </h2>
-          <p className="text-base sm:text-lg text-brand-muted dark:text-dark-muted">
-            We are building the complete wellness ecosystem for the continent. Here is what our engineering team is rolling out next.
-          </p>
         </div>
 
         {/* 6 Roadmap Cards */}
@@ -22,7 +16,7 @@ export const Roadmap: React.FC = () => {
           {roadmapItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white dark:bg-dark-card p-7 rounded-2xl border border-brand-border dark:border-dark-border shadow-subtle dark:shadow-dark-subtle flex flex-col justify-between text-left hover:border-brand-gold/40 transition-colors"
+              className="bg-white dark:bg-dark-card p-7 rounded-2xl border border-brand-border dark:border-dark-border flex flex-col justify-between text-left hover:border-brand-gold/40 transition-colors"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

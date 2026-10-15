@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
           {/* Left Brand & Tagline */}
           <div className="md:col-span-5 flex flex-col items-start">
             <a href="#" className="inline-block mb-4">
-              <div className="inline-flex p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:shadow-[0_2px_12px_rgba(0,0,0,0.35)] dark:border dark:border-white/20">
+              <div className="inline-flex p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:border dark:border-white/20">
                 <img
                   src={levoAssets.primaryLogo}
                   alt="Levo"

@@ -25,21 +25,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Hero Copy */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            {/* Subtitle Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border shadow-subtle dark:shadow-dark-subtle mb-6">
-              <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-brand-muted dark:text-dark-muted font-mono">
-                {heroData.pillText}
-              </span>
-            </div>
-
             {/* Primary Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-extrabold text-brand-dark dark:text-dark-text leading-[1.12] tracking-tight mb-6">
-              {heroData.headlineLead} <br className="hidden sm:inline" />
-              <span className="text-brand-dark dark:text-dark-text relative inline-block">
-                {heroData.headlineAccent}
-                <span className="absolute left-0 bottom-1.5 w-full h-[6px] bg-brand-green/20 dark:bg-brand-green/35 -z-10 rounded" />
-              </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-brand-dark dark:text-dark-text leading-[1.12] tracking-tight mb-6">
+              {heroData.headlineLead}
             </h1>
 
             {/* Supporting Paragraph */}
@@ -51,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
             <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10">
               <button
                 onClick={onOpenWaitlist}
-                className="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-brand-terra text-white font-semibold text-base shadow-sm hover:brightness-110 active:scale-[0.98] transition-all"
+                className="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-brand-terra text-white font-semibold text-base hover:brightness-110 active:scale-[0.98] transition-all"
               >
                 {heroData.primaryCtaText}
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
               <a
                 href="#how-it-works"
                 onClick={handleScrollToHowItWorks}
-                className="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border text-brand-dark dark:text-dark-text font-semibold text-base shadow-subtle dark:shadow-dark-subtle hover:bg-brand-subtle dark:hover:bg-dark-elevated transition-all"
+                className="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border text-brand-dark dark:text-dark-text font-semibold text-base hover:bg-brand-subtle dark:hover:bg-dark-elevated transition-all"
               >
                 {heroData.secondaryCtaText}
               </a>

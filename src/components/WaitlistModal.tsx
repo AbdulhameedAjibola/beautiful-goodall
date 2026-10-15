@@ -120,7 +120,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
       />
 
       {/* Modal Dialog Card */}
-      <div className="relative w-full max-w-lg bg-white dark:bg-[#161914] rounded-3xl border border-stone-200 dark:border-dark-border shadow-2xl p-6 sm:p-8 text-left z-10 transition-all">
+      <div className="relative w-full max-w-lg bg-white dark:bg-[#161914] rounded-3xl border border-stone-200 dark:border-dark-border p-6 sm:p-8 text-left z-10 transition-all">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -238,7 +238,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-4 rounded-xl bg-brand-terra hover:bg-brand-terra-dark text-white font-semibold text-sm sm:text-base flex items-center justify-center gap-2 active:scale-[0.99] transition-all shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full py-4 rounded-xl bg-brand-terra hover:bg-brand-terra-dark text-white font-semibold text-sm sm:text-base flex items-center justify-center gap-2 active:scale-[0.99] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <>

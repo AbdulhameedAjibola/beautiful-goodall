@@ -10,7 +10,7 @@ export const PhoneMockup: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/20 via-brand-terra/10 to-brand-gold/15 dark:from-brand-green/30 dark:to-brand-gold/20 rounded-[44px] filter blur-2xl transform scale-95 pointer-events-none" />
 
       {/* Phone Shell Frame */}
-      <div className="relative bg-black dark:bg-[#080907] p-3.5 rounded-[44px] shadow-phone border border-black/80 dark:border-white/10">
+      <div className="relative bg-black dark:bg-[#080907] p-3.5 rounded-[44px] border border-black/80 dark:border-white/10">
         {/* Dynamic Island */}
         <div className="w-28 h-5 bg-black dark:bg-[#121411] rounded-full mx-auto mb-2 flex items-center justify-center gap-1.5">
           <div className="w-2.5 h-2.5 rounded-full bg-[#181818] dark:bg-[#20241e]" />
@@ -37,7 +37,7 @@ export const PhoneMockup: React.FC = () => {
           </div>
 
           {/* Meal Card: Smokey Party Jollof */}
-          <div className="bg-[#FBFBFA] dark:bg-[#181b16] rounded-2xl p-4 border border-brand-border dark:border-dark-border shadow-subtle dark:shadow-dark-subtle mb-4">
+          <div className="bg-[#FBFBFA] dark:bg-[#181b16] rounded-2xl p-4 border border-brand-border dark:border-dark-border mb-4">
             <div className="flex items-start justify-between gap-3 mb-3">
               <div>
                 <div className="inline-block text-[10px] font-bold uppercase tracking-wider text-brand-terra bg-brand-terra/10 dark:bg-brand-terra/20 px-2 py-0.5 rounded mb-1 font-mono">

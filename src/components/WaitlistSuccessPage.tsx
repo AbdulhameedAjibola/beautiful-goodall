@@ -96,7 +96,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
   };
 
   const tweetText = encodeURIComponent(
-    `I just joined the early access waitlist for Levo—the first fitness and nutrition app built for real Nigerian meals! Join me here: ${shareUrl}`
+    `I just joined the early access waitlist for Levo, the first fitness and nutrition app built for real Nigerian meals! Join me here: ${shareUrl}`
   );
   const whatsappText = encodeURIComponent(
     `Hey! Check out Levo, the nutrition & fitness app built for Nigerian foods. Join early access with my invite: ${shareUrl}`
@@ -111,7 +111,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
             onClick={onNavigateHome}
             className="flex items-center gap-3 group focus:outline-none"
           >
-            <div className="p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:shadow-[0_2px_12px_rgba(0,0,0,0.35)] dark:border dark:border-white/20">
+            <div className="p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:border dark:border-white/20">
               <img
                 src={levoAssets.primaryLogo}
                 alt="Levo"
@@ -168,7 +168,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
       <main className="max-w-4xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
         {/* Success Confirmation Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="w-16 h-16 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center mx-auto mb-5 shadow-sm">
+          <div className="w-16 h-16 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center mx-auto mb-5">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
             </svg>
@@ -184,7 +184,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
         </div>
 
         {/* Share Your Link Now Section */}
-        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl p-6 sm:p-8 shadow-subtle dark:shadow-dark-subtle mb-10 text-left">
+        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl p-6 sm:p-8 mb-10 text-left">
           <div className="flex items-center justify-between mb-2">
             <h2 className="text-lg sm:text-xl font-bold font-sora text-brand-dark dark:text-dark-text">
               Share your link now
@@ -212,7 +212,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
             </div>
             <button
               onClick={handleCopyLink}
-              className={`px-6 py-3.5 rounded-xl font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-sm whitespace-nowrap active:scale-[0.98] ${
+              className={`px-6 py-3.5 rounded-xl font-semibold text-sm transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-[0.98] ${
                 copied
                   ? 'bg-brand-green text-black font-bold'
                   : 'bg-brand-dark dark:bg-brand-green dark:text-black text-white hover:brightness-110'
@@ -264,13 +264,10 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
         </section>
 
         {/* Waitlist Rewards Highlight */}
-        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl p-6 sm:p-8 shadow-subtle dark:shadow-dark-subtle mb-10 text-left">
+        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl p-6 sm:p-8 mb-10 text-left">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-brand-gold font-mono">
-                Exclusive Perks
-              </span>
-              <h2 className="text-xl sm:text-2xl font-extrabold font-sora text-brand-dark dark:text-dark-text mt-1">
+              <h2 className="text-xl sm:text-2xl font-extrabold font-sora text-brand-dark dark:text-dark-text">
                 Waitlist Rewards
               </h2>
             </div>
@@ -281,12 +278,12 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* 1st Place */}
-            <div className="relative rounded-2xl p-5 border border-amber-300 dark:border-brand-gold/40 bg-gradient-to-b from-amber-50/80 to-amber-100/30 dark:from-amber-950/20 dark:to-dark-card shadow-sm flex flex-col justify-between">
+            <div className="relative rounded-2xl p-5 border border-amber-300 dark:border-brand-gold/40 bg-gradient-to-b from-amber-50/80 to-amber-100/30 dark:from-amber-950/20 dark:to-dark-card flex flex-col justify-between">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[11px] font-mono uppercase font-bold text-amber-800 dark:text-brand-gold">
                   1st Place
                 </span>
-                <span className="w-7 h-7 rounded-full bg-brand-gold text-black font-extrabold text-xs flex items-center justify-center shadow-sm">
+                <span className="w-7 h-7 rounded-full bg-brand-gold text-black font-extrabold text-xs flex items-center justify-center">
                   🥇
                 </span>
               </div>
@@ -307,7 +304,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
             </div>
 
             {/* 2nd Place */}
-            <div className="relative rounded-2xl p-5 border border-stone-200 dark:border-dark-border bg-gradient-to-b from-stone-50 to-white dark:from-dark-elevated/40 dark:to-dark-card shadow-sm flex flex-col justify-between">
+            <div className="relative rounded-2xl p-5 border border-stone-200 dark:border-dark-border bg-gradient-to-b from-stone-50 to-white dark:from-dark-elevated/40 dark:to-dark-card flex flex-col justify-between">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[11px] font-mono uppercase font-bold text-stone-600 dark:text-dark-muted">
                   2nd Place
@@ -333,7 +330,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
             </div>
 
             {/* 3rd Place */}
-            <div className="relative rounded-2xl p-5 border border-stone-200 dark:border-dark-border bg-gradient-to-b from-stone-50 to-white dark:from-dark-elevated/40 dark:to-dark-card shadow-sm flex flex-col justify-between">
+            <div className="relative rounded-2xl p-5 border border-stone-200 dark:border-dark-border bg-gradient-to-b from-stone-50 to-white dark:from-dark-elevated/40 dark:to-dark-card flex flex-col justify-between">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[11px] font-mono uppercase font-bold text-amber-700/80 dark:text-amber-500/80">
                   3rd Place
@@ -361,14 +358,11 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
         </section>
 
         {/* Leaderboard Table Container */}
-        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl overflow-hidden shadow-subtle dark:shadow-dark-subtle mb-6 text-left">
+        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl overflow-hidden mb-6 text-left">
           <div className="p-6 sm:p-8 border-b border-brand-border dark:border-dark-border">
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-brand-green font-mono">
-                  Explorer Rankings
-                </span>
-                <h3 className="text-2xl font-extrabold font-sora text-brand-dark dark:text-dark-text mt-1">
+                <h3 className="text-2xl font-extrabold font-sora text-brand-dark dark:text-dark-text">
                   Waitlist Leaderboard
                 </h3>
               </div>
@@ -452,11 +446,8 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
         </section>
 
         {/* Position Callout Directly Beneath the Leaderboard */}
-        <div className="bg-gradient-to-r from-stone-900 to-black dark:from-[#181b16] dark:to-[#121411] border border-stone-800 dark:border-dark-border text-white rounded-2xl p-6 sm:p-7 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left mb-6">
+        <div className="bg-gradient-to-r from-stone-900 to-black dark:from-[#181b16] dark:to-[#121411] border border-stone-800 dark:border-dark-border text-white rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left mb-6">
           <div>
-            <div className="text-xs font-mono uppercase tracking-wider text-brand-gold font-bold mb-1">
-              Your Current Status
-            </div>
             <div className="text-2xl sm:text-3xl font-extrabold font-sora text-white">
               You are at: <span className="text-brand-green">#{position}!</span>
             </div>

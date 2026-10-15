@@ -6,16 +6,10 @@ export const Features: React.FC = () => {
     <section className="py-20 md:py-28 bg-[#FBFBFA] dark:bg-dark-bg transition-colors" id="features">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Section Header */}
-        <div className="max-w-2xl mb-14 text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-green font-mono">
-            Engineered For Real Life
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text mt-2 mb-4 leading-tight">
+        <div className="max-w-2xl mb-10 text-left">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text leading-tight">
             Everything you need to eat well and thrive.
           </h2>
-          <p className="text-base sm:text-lg text-brand-muted dark:text-dark-muted">
-            Global apps expect kale smoothies and turkey bacon. Levo gives you clean, accurate tools designed for African kitchens and real plates.
-          </p>
         </div>
 
         {/* 4-Card Feature Grid */}
@@ -23,7 +17,7 @@ export const Features: React.FC = () => {
           {keyFeatures.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white dark:bg-dark-card p-7 sm:p-8 rounded-2xl border border-brand-border dark:border-dark-border shadow-subtle dark:shadow-dark-subtle hover:shadow-card hover:-translate-y-1 transition-all duration-200 text-left"
+              className="bg-white dark:bg-dark-card p-7 sm:p-8 rounded-2xl border border-brand-border dark:border-dark-border transition-all duration-200 text-left"
             >
               <div
                 className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${

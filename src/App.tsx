@@ -6,7 +6,6 @@ import { TrustStrip } from './components/TrustStrip';
 import { Features } from './components/Features';
 import { HowItWorks } from './components/HowItWorks';
 import { Community } from './components/Community';
-import { MacroAccuracy } from './components/MacroAccuracy';
 import { Roadmap } from './components/Roadmap';
 import { Faq } from './components/Faq';
 import { WaitlistCta } from './components/WaitlistCta';
@@ -53,13 +52,10 @@ export const AppContent: React.FC<AppContentProps> = ({ onNavigateToSuccess }) =
         {/* 4. How It Works with Rapid Meal Logging Step 2 */}
         <HowItWorks />
 
-        {/* 5. Community and Creators Showcase */}
+        {/* 5. Community Showcase */}
         <Community />
 
-        {/* 6. Section 7: Food & Macro Database Accuracy */}
-        <MacroAccuracy />
-
-        {/* 7. Product Roadmap */}
+        {/* 6. Product Roadmap */}
         <Roadmap />
 
         {/* 8. Frequently Asked Questions */}

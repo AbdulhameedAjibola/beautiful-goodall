@@ -18,16 +18,10 @@ export const Faq: React.FC = () => {
   return (
     <section className="py-20 md:py-28 bg-white dark:bg-dark-card border-y border-brand-border dark:border-dark-border transition-colors" id="faq">
       <div className="max-w-4xl mx-auto px-5 sm:px-8">
-        <div className="text-center max-w-xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-green font-mono">
-            Got Questions?
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text mt-2 mb-3">
+        <div className="text-center max-w-xl mx-auto mb-10">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text">
             Frequently asked questions
           </h2>
-          <p className="text-base text-brand-muted dark:text-dark-muted">
-            Honest, straightforward answers about how Levo works for your daily routine.
-          </p>
         </div>
 
         {/* 7 FAQ Accordions */}

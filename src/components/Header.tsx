@@ -23,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenWaitlist }) => {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
         {/* Levo Brandmark */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:shadow-[0_2px_12px_rgba(0,0,0,0.35)] dark:border dark:border-white/20">
+          <div className="p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:border dark:border-white/20">
             <img
               src={levoAssets.primaryLogo}
               alt="Levo"
@@ -100,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenWaitlist }) => {
           {/* Early Access Button -> Opens Waitlist Modal */}
           <button
             onClick={onOpenWaitlist}
-            className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-dark dark:bg-brand-green dark:text-black dark:hover:bg-brand-green-bright text-white text-[14px] font-semibold tracking-wide hover:bg-black transition-all active:scale-[0.98] shadow-sm"
+            className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-dark dark:bg-brand-green dark:text-black dark:hover:bg-brand-green-bright text-white text-[14px] font-semibold tracking-wide hover:bg-black transition-all active:scale-[0.98]"
           >
             Get early access
           </button>
@@ -156,7 +156,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenWaitlist }) => {
 
       {/* Mobile Collapsible Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-brand-border dark:border-dark-border bg-white dark:bg-dark-bg px-6 py-6 shadow-xl animate-fadeIn">
+        <div className="md:hidden border-b border-brand-border dark:border-dark-border bg-white dark:bg-dark-bg px-6 py-6 animate-fadeIn">
           <nav className="flex flex-col gap-4 text-base font-medium text-brand-dark dark:text-dark-text">
             {navLinks.map((link) => (
               <a
@@ -182,7 +182,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenWaitlist }) => {
                   setMobileMenuOpen(false);
                   onOpenWaitlist();
                 }}
-                className="w-full text-center py-3.5 rounded-xl bg-brand-terra dark:bg-brand-green dark:text-black text-white font-semibold shadow-sm active:scale-[0.98] transition-all"
+                className="w-full text-center py-3.5 rounded-xl bg-brand-terra dark:bg-brand-green dark:text-black text-white font-semibold active:scale-[0.98] transition-all"
               >
                 Get early access
               </button>

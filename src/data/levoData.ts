@@ -61,10 +61,10 @@ export const navLinks: NavLink[] = [
 
 export const heroData = {
   pillText: 'Nigeria & Pan-Africa Nutrition',
-  headlineLead: 'Eat the food you grew up on.',
-  headlineAccent: 'Still hit your health goals.',
+  headlineLead: 'Hit your nutrition goals without giving up local meals you grew up eating.',
+  headlineAccent: '',
   subheading:
-    'Levo is the first fitness and nutrition app engineered around real Nigerian meals. Accurately track calories, balance macros, and get healthy plans—without trading Jollof and Egusi for plain oats and boiled chicken.',
+    'Levo is here to help you accurately track the macros in your local Nigerian dishes based on a database built extensively on local meals and ingredients. Accurately track macros, calories, without second guessing, or giving up your loved meals for generic western foods.',
   primaryCtaText: 'Get early access',
   secondaryCtaText: 'See how it works',
   socialProofCount: '2,400+ pioneers',
@@ -100,7 +100,7 @@ export const trustPoints: TrustPoint[] = [
   {
     id: 'algorithm',
     title: 'State-of-the-art progress tracking',
-    description: 'Driven by the latest algorithms to model body transformation, metabolic rates, and adherence.',
+    description: 'Personalized targets calibrated for your body composition and goals.',
     iconType: 'algorithm',
   },
 ];
@@ -110,7 +110,7 @@ export const keyFeatures: FeatureItem[] = [
     id: 'database',
     title: 'Food database that knows home',
     description:
-      'Pounded Yam, Amala, Egusi, Jollof and more, with laboratory-verified calories and macros so you never have to guess.',
+      'Pounded Yam, Amala, Egusi, Jollof and more, with verified calories and macros so you never have to guess.',
     accent: 'green',
     iconType: 'database',
   },
@@ -118,7 +118,7 @@ export const keyFeatures: FeatureItem[] = [
     id: 'logging',
     title: 'Effortless logging',
     description:
-      'Track calories, macros, micronutrients, and daily water intake with core actions completed in just a few quick taps.',
+      'Track calories, macros, and daily water intake in just a few quick taps.',
     accent: 'terra',
     iconType: 'log',
   },
@@ -126,7 +126,7 @@ export const keyFeatures: FeatureItem[] = [
     id: 'recipes',
     title: 'Recipe hub',
     description:
-      'Discover meals and share your own healthy recipes with calculated macros, and let others rate and comment.',
+      'Discover meals and share healthy recipes with calculated macros.',
     accent: 'gold',
     iconType: 'recipes',
   },
@@ -134,7 +134,7 @@ export const keyFeatures: FeatureItem[] = [
     id: 'analytics',
     title: 'Progress that makes sense',
     description:
-      'Simple, clear analytics on your nutritional consistency, energy levels, and body transformation trends over time.',
+      'Clear analytics on your nutrition consistency and body transformation trends.',
     accent: 'dark',
     iconType: 'analytics',
   },
@@ -145,86 +145,37 @@ export const howItWorksSteps: WorkflowStep[] = [
     stepNumber: '01',
     title: 'Tell us about you & your goal',
     description:
-      'Share your height, target weight, activity levels, allergies, and regional taste preferences so Levo can calculate your metabolic baseline.',
+      'Set your target weight, activity level, and meal preferences so Levo can calculate your daily targets.',
     badgeLabel: 'Profile Setup',
   },
   {
     stepNumber: '02',
     title: 'Log your meal in seconds',
     description:
-      'Search our verified catalog or tap your favorites. Log Suya, Moi Moi, or soups with calibrated local bowl and piece sizes in just a couple taps.',
+      'Search local dishes or tap your favorites. Log Suya, Moi Moi, or soups with calibrated local portion sizes in a few taps.',
     badgeLabel: 'Quick Meal Log',
   },
   {
     stepNumber: '03',
     title: 'Track progress & stay consistent',
     description:
-      'See how your eating habits translate to true body composition improvements, better sleep quality, and sustained daily energy.',
+      'Track your daily habits, see consistent progress, and stay on target.',
     badgeLabel: '14-Day Streak',
   },
 ];
 
 export const communityData = {
-  badge: 'Real Accountability',
-  title: 'Work out with creators who understand your lifestyle.',
-  description:
-    "Fitness is easier when you're not walking the journey alone. Follow your favorite Nigerian fitness coaches, local chefs, and creators. Adopt their proven high-protein local meal plans and follow their curated workout regimens.",
-  coach: {
-    name: 'Coach Femi',
-    niche: 'Lagos Strength & Calisthenics',
-    members: '14.2k Members',
-    initials: 'CF',
-    mealTitle: 'Post-workout Grilled Suya Salad (420 kcal, 45g protein)',
-    sharedTo: 'Shared to 84 Squads',
-  },
-  squad: {
-    name: 'Lagos Island Squad',
-    rank: 'Week 4 Rank #2',
-    members: [
-      { name: '1. Tunde A.', score: '98% logged' },
-      { name: '2. You (Chidi)', score: '96% logged', highlight: true },
-    ],
-    hypeText: '🔥 42 members completed their morning workout today!',
-  },
+  title: 'Stay accountable with people who share your goals.',
   cards: [
     {
       title: 'Accountability Partners',
       description:
-        'Get matched with people in your neighborhood or timezone who share similar fitness goals to keep each other showing up.',
+        'Connect with workout partners in your city or timezone to share milestones and keep each other on track.',
     },
     {
       title: 'Friendly Squad Challenges',
       description:
-        'Join water intake challenges, step leaderboards, and consistent logging sprints with real bragging rights and badges.',
-    },
-  ],
-};
-
-export const macroAccuracyData = {
-  badge: 'DATABASE PRECISION',
-  title: 'Laboratory-tested calories and macros for every Nigerian dish.',
-  description:
-    'Most fitness apps force you to pick generic Western foods or guess the macros of home cooking. Levo is powered by a rigorously tested, culturally verified food database calibrated for authentic Nigerian kitchens, canteens, and restaurants.',
-  points: [
-    {
-      title: 'Lab-Calibrated Macro Splits',
-      description:
-        'Accurate protein, carbohydrate, fat, and dietary fiber ratios calculated for regional ingredients, from egusi seeds to smoked catfish.',
-    },
-    {
-      title: 'Calibrated Local Portion Sizes',
-      description:
-        'Portions measured in wraps, ladles, pieces, and standard canteen takeout packs—so you never need a confusing food scale.',
-    },
-    {
-      title: 'Real Cooking Method Accounting',
-      description:
-        'Reflects real recipe preparations: palm oil vs vegetable oil, pepper reduction bases, and bone broth density.',
-    },
-    {
-      title: 'Algorithmic Density Validation',
-      description:
-        'Continuously cross-referenced against scientific nutritional references and ongoing local food sample analyses.',
+        'Join step challenges, hydration goals, and meal logging streaks with friendly community competition.',
     },
   ],
 };
@@ -235,7 +186,7 @@ export const roadmapItems: RoadmapItem[] = [
     step: '01',
     title: 'Levo Life Partner',
     description:
-      'An intelligent personal wellness coach that guides your daily food choices and nudges you at just the right moments before cravings strike.',
+      'An intelligent wellness coach that guides your daily food choices and nudges you at the right moments.',
     status: 'In Private Beta',
     badge: 'Coming soon',
   },
@@ -244,7 +195,7 @@ export const roadmapItems: RoadmapItem[] = [
     step: '02',
     title: 'Buy Ingredients',
     description:
-      'Order fresh groceries and local soup ingredients matched precisely to your weekly meal plan, delivered directly to your door through vetted logistics partners.',
+      'Order fresh groceries and local soup ingredients matched to your meal plan, delivered directly to your door.',
     status: 'Lagos & Abuja Pilot',
     badge: 'Coming soon',
   },
@@ -253,7 +204,7 @@ export const roadmapItems: RoadmapItem[] = [
     step: '03',
     title: 'Levo Marketplace',
     description:
-      'Discover pre-portioned meal prep kits, healthy restaurant orders with verified macro tags, and trusted clean supplements.',
+      'Discover pre-portioned meal prep kits, healthy restaurant orders with verified macros, and clean supplements.',
     status: 'Merchant Integrations',
     badge: 'Coming soon',
   },
@@ -262,7 +213,7 @@ export const roadmapItems: RoadmapItem[] = [
     step: '04',
     title: 'Wearable Sync',
     description:
-      'Connect Apple Watch, Garmin, Whoop, and FitBit for automatic daily activity tracking, heart rate variability (HRV), and restful sleep logs.',
+      'Connect Apple Watch, Garmin, Whoop, and FitBit for automatic daily activity tracking and sleep logs.',
     status: 'HealthKit & WearOS',
     badge: 'Coming soon',
   },
@@ -271,7 +222,7 @@ export const roadmapItems: RoadmapItem[] = [
     step: '05',
     title: 'Premium Plans & Creator Subscriptions',
     description:
-      'Subscribe directly to private squads run by Africa’s top strength coaches and clinical nutritionists for customized one-on-one coaching and exclusive weekly meal drops.',
+      'Join private squads for specialized coaching, custom programs, and weekly meal ideas.',
     status: 'Creator Studio Launch',
     badge: 'Coming soon',
   },
@@ -280,7 +231,7 @@ export const roadmapItems: RoadmapItem[] = [
     step: '06',
     title: 'Accountability Partner Matching',
     description:
-      'Find workout buddies and meal-prep allies in your neighborhood to share milestones and keep each other showing up.',
+      'Find workout buddies and meal-prep allies in your neighborhood to share milestones and stay accountable.',
     status: 'Hyperlocal Pairing',
     badge: 'Coming soon',
   },
@@ -291,43 +242,31 @@ export const faqItems: FaqItem[] = [
     id: 'q1',
     question: 'What is Levo?',
     answer:
-      'Levo is a fitness and nutrition mobile app created specifically for people in Nigeria and across the African diaspora. Unlike Western apps that force you to guess the calories in Egusi soup or Pounded Yam, Levo comes with an extensive, lab-verified database of local dishes, custom meal plans, habit trackers, and workout programs.',
+      'Levo is a nutrition and fitness app built around authentic Nigerian and African meals. It features a thoroughly localized food database with verified calorie and macro counts, helping you accurately track your nutrition while enjoying local dishes.',
   },
   {
     id: 'q2',
     question: 'Is Levo free to use?',
     answer:
-      'Yes! You can log your meals, track calories, monitor water intake, and access our core Nigerian food database for free. Early access pioneers will also receive special complimentary access to premium squad features when we roll them out.',
+      'Yes! You can log your meals, track calories, monitor water intake, and access our core Nigerian food database for free. Early access pioneers will also receive complimentary access to premium squad features when we roll them out.',
   },
   {
     id: 'q3',
     question: 'Does Levo have Nigerian and African foods?',
     answer:
-      'Extensively. We have cataloged hundreds of local staples—including Jollof, Fried Rice, Egusi, Efo Riro, Ogbono, Edikang Ikong, Pounded Yam, Amala, Semo, Suya, Akara, Moi Moi, plantain portions, and street snacks—calibrated with realistic local portion sizes.',
+      'Extensively. We have cataloged hundreds of local staples including Jollof, Fried Rice, Egusi, Efo Riro, Ogbono, Edikang Ikong, Pounded Yam, Amala, Semo, Suya, Akara, Moi Moi, plantain portions, and street snacks, calibrated with realistic local portion sizes.',
   },
   {
     id: 'q4',
     question: 'How accurate are the calories and macros in the database?',
     answer:
-      'Our nutrition values are laboratory-calibrated and cross-referenced with regional food composition studies. We take into account traditional cooking methods, oil usage, and canteen portion sizes to deliver the most accurate calorie and macro breakdown available for African foods.',
-  },
-  {
-    id: 'q5',
-    question: 'What are ChopPoints and how do I earn them?',
-    answer:
-      "ChopPoints are our in-app reward tokens. You earn them simply by showing up: logging your meals consistently, hitting your daily water goals, finishing workouts, and cheering on your accountability partners. You'll be able to redeem them for marketplace discounts and workout gear.",
+      'Our nutrition values are calibrated and cross-referenced with regional food composition studies. We take into account traditional cooking methods, oil usage, and canteen portion sizes to deliver reliable calorie and macro breakdowns for African foods.',
   },
   {
     id: 'q6',
     question: 'Can I follow my favorite fitness creators and chefs on Levo?',
     answer:
       'Yes. Levo hosts a creator ecosystem where certified trainers and culinary creators share their recipes, meal blueprints, and workout routines. You can join their community squads and take part in group challenges.',
-  },
-  {
-    id: 'q7',
-    question: 'Do I need to download Levo from an app store?',
-    answer:
-      "Levo is built as a lightning-fast responsive Progressive Web App (PWA) with native iOS and Android apps rolling out soon. You can install it straight to your phone's home screen in one tap with zero storage bloat, or download the app when store builds go live.",
   },
 ];
 
