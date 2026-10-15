@@ -30,6 +30,10 @@ export interface LeaderboardResponse {
   userPosition?: number;
 }
 
+/**
+ * Google Apps Script Web App Backend Endpoint
+ * Waitlist POST (name, email, ref_by, insights) & Leaderboard GET (?email=...)
+ */
 export const GOOGLE_APPS_SCRIPT_URL =
   'https://script.google.com/macros/s/AKfycbyiM3CMKDoVPiK8-B53_3fNpW5h8N9sYzY06uHCdDuMWk8nehCAiUbB6VUfKNNH_6MYYQ/exec';
 

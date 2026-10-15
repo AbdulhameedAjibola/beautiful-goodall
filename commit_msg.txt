@@ -1,1 +1,1 @@
-Fix GitHub Pages asset base paths, node version in deploy workflow, and SPA routing
+Set and verify backend Google Apps Script API endpoint URL
