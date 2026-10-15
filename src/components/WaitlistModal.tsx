@@ -95,7 +95,10 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
       if (onSuccessRedirect) {
         onSuccessRedirect(userSummary);
       } else {
-        window.history.pushState({}, '', '/waitlist-success');
+        const basePath = window.location.pathname.startsWith('/beautiful-goodall')
+          ? '/beautiful-goodall'
+          : '';
+        window.history.pushState({}, '', `${basePath}/waitlist-success`);
         window.dispatchEvent(new PopStateEvent('popstate'));
       }
     } else {

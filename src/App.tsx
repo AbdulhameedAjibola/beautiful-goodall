@@ -83,6 +83,13 @@ export const AppContent: React.FC<AppContentProps> = ({ onNavigateToSuccess }) =
 };
 
 export const App: React.FC = () => {
+  const getBasePath = () => {
+    if (typeof window === 'undefined') return '';
+    return window.location.pathname.startsWith('/beautiful-goodall')
+      ? '/beautiful-goodall'
+      : '';
+  };
+
   const [currentPath, setCurrentPath] = useState(() => {
     if (typeof window !== 'undefined') {
       return window.location.pathname;
@@ -112,18 +119,22 @@ export const App: React.FC = () => {
     position: number;
   }) => {
     setCurrentUserData(data);
-    window.history.pushState({}, '', '/waitlist-success');
-    setCurrentPath('/waitlist-success');
+    const basePath = getBasePath();
+    const target = `${basePath}/waitlist-success`;
+    window.history.pushState({}, '', target);
+    setCurrentPath(target);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const navigateToHome = () => {
-    window.history.pushState({}, '', '/');
-    setCurrentPath('/');
+    const basePath = getBasePath();
+    const target = `${basePath}/`;
+    window.history.pushState({}, '', target);
+    setCurrentPath(target);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const isSuccessPage = currentPath.startsWith('/waitlist-success');
+  const isSuccessPage = currentPath.includes('/waitlist-success');
 
   return (
     <ThemeProvider>
