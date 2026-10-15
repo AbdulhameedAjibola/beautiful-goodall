@@ -23,11 +23,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenWaitlist }) => {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
         {/* Levo Brandmark */}
         <a href="#" className="flex items-center gap-3 group">
-          <img
-            src={levoAssets.primaryLogo}
-            alt="Levo"
-            className="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-[1.02] filter dark:brightness-110"
-          />
+          <div className="p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:shadow-[0_2px_12px_rgba(0,0,0,0.35)] dark:border dark:border-white/20">
+            <img
+              src={levoAssets.primaryLogo}
+              alt="Levo"
+              className="h-7 sm:h-8 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            />
+          </div>
         </a>
 
         {/* Desktop Nav Links */}

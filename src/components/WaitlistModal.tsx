@@ -145,7 +145,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
           id="modal-title"
           className="text-2xl sm:text-3xl font-extrabold font-sora text-brand-dark dark:text-dark-text leading-tight mb-2"
         >
-          Join the Levo Pioneer Waitlist
+          Join the Levo Explorer Waitlist
         </h3>
 
         <p className="text-sm text-brand-muted dark:text-dark-muted mb-6 leading-relaxed">
@@ -252,7 +252,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
           </div>
 
           <p className="text-[11px] text-center text-brand-muted dark:text-dark-muted font-mono pt-1">
-            Zero spam. Only high-touch pioneer invites when your batch opens.
+            Zero spam. Get notified immediately once the app launches
           </p>
         </form>
       </div>

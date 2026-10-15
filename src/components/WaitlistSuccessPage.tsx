@@ -111,11 +111,13 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
             onClick={onNavigateHome}
             className="flex items-center gap-3 group focus:outline-none"
           >
-            <img
-              src={levoAssets.primaryLogo}
-              alt="Levo"
-              className="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-[1.02] filter dark:brightness-110"
-            />
+            <div className="p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:shadow-[0_2px_12px_rgba(0,0,0,0.35)] dark:border dark:border-white/20">
+              <img
+                src={levoAssets.primaryLogo}
+                alt="Levo"
+                className="h-7 sm:h-8 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              />
+            </div>
           </button>
 
           <div className="flex items-center gap-3">
@@ -177,7 +179,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-brand-muted dark:text-dark-muted leading-relaxed">
-            Welcome to the Levo community{userData.name ? `, ${userData.name.split(' ')[0]}` : ''}. We have reserved your pioneer spot. Refer friends to climb the leaderboard and unlock complimentary access to premium coaching squads.
+            Welcome to the Levo community{userData.name ? `, ${userData.name.split(' ')[0]}` : ''}. We have reserved your explorer spot. Refer friends to climb the leaderboard and unlock complimentary access to premium coaching squads.
           </p>
         </div>
 
@@ -261,20 +263,117 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
           </div>
         </section>
 
+        {/* Waitlist Rewards Highlight */}
+        <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl p-6 sm:p-8 shadow-subtle dark:shadow-dark-subtle mb-10 text-left">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-gold font-mono">
+                Exclusive Perks
+              </span>
+              <h2 className="text-xl sm:text-2xl font-extrabold font-sora text-brand-dark dark:text-dark-text mt-1">
+                Waitlist Rewards
+              </h2>
+            </div>
+            <span className="text-xs font-mono text-brand-green bg-brand-green/10 border border-brand-green/20 px-3 py-1 rounded-full self-start sm:self-auto font-semibold">
+              Live Competition
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* 1st Place */}
+            <div className="relative rounded-2xl p-5 border border-amber-300 dark:border-brand-gold/40 bg-gradient-to-b from-amber-50/80 to-amber-100/30 dark:from-amber-950/20 dark:to-dark-card shadow-sm flex flex-col justify-between">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[11px] font-mono uppercase font-bold text-amber-800 dark:text-brand-gold">
+                  1st Place
+                </span>
+                <span className="w-7 h-7 rounded-full bg-brand-gold text-black font-extrabold text-xs flex items-center justify-center shadow-sm">
+                  🥇
+                </span>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold font-sora text-brand-dark dark:text-dark-text mb-1">
+                  First 6 Months Free
+                </h4>
+                <p className="text-xs text-brand-muted dark:text-dark-muted leading-relaxed mb-4">
+                  Full, complimentary VIP access on the Levo app upon public launch.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-amber-200/70 dark:border-dark-border text-xs font-mono text-amber-900 dark:text-amber-300 font-semibold flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>At least 30 referrals</span>
+              </div>
+            </div>
+
+            {/* 2nd Place */}
+            <div className="relative rounded-2xl p-5 border border-stone-200 dark:border-dark-border bg-gradient-to-b from-stone-50 to-white dark:from-dark-elevated/40 dark:to-dark-card shadow-sm flex flex-col justify-between">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[11px] font-mono uppercase font-bold text-stone-600 dark:text-dark-muted">
+                  2nd Place
+                </span>
+                <span className="w-7 h-7 rounded-full bg-stone-200 dark:bg-stone-700 text-stone-800 dark:text-stone-200 font-extrabold text-xs flex items-center justify-center">
+                  🥈
+                </span>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold font-sora text-brand-dark dark:text-dark-text mb-1">
+                  First 4 Months Free
+                </h4>
+                <p className="text-xs text-brand-muted dark:text-dark-muted leading-relaxed mb-4">
+                  Four consecutive months of premium logging and meal verification.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-stone-200/80 dark:border-dark-border text-xs font-mono text-stone-700 dark:text-stone-300 font-semibold flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>At least 20 referrals</span>
+              </div>
+            </div>
+
+            {/* 3rd Place */}
+            <div className="relative rounded-2xl p-5 border border-stone-200 dark:border-dark-border bg-gradient-to-b from-stone-50 to-white dark:from-dark-elevated/40 dark:to-dark-card shadow-sm flex flex-col justify-between">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[11px] font-mono uppercase font-bold text-amber-700/80 dark:text-amber-500/80">
+                  3rd Place
+                </span>
+                <span className="w-7 h-7 rounded-full bg-amber-800/20 text-amber-800 dark:text-amber-400 font-extrabold text-xs flex items-center justify-center">
+                  🥉
+                </span>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold font-sora text-brand-dark dark:text-dark-text mb-1">
+                  First 2 Months Free
+                </h4>
+                <p className="text-xs text-brand-muted dark:text-dark-muted leading-relaxed mb-4">
+                  Two full months of accurate African macro tracking on the app.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-stone-200/80 dark:border-dark-border text-xs font-mono text-stone-700 dark:text-stone-300 font-semibold flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>At least 10 referrals</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Leaderboard Table Container */}
         <section className="bg-white dark:bg-dark-card border border-brand-border dark:border-dark-border rounded-3xl overflow-hidden shadow-subtle dark:shadow-dark-subtle mb-6 text-left">
           <div className="p-6 sm:p-8 border-b border-brand-border dark:border-dark-border">
             <div className="flex items-center justify-between">
               <div>
                 <span className="text-xs font-bold uppercase tracking-widest text-brand-green font-mono">
-                  Pioneer Rankings
+                  Explorer Rankings
                 </span>
                 <h3 className="text-2xl font-extrabold font-sora text-brand-dark dark:text-dark-text mt-1">
                   Waitlist Leaderboard
                 </h3>
               </div>
               <span className="text-xs font-mono text-brand-muted dark:text-dark-muted bg-stone-100 dark:bg-dark-elevated px-3 py-1.5 rounded-lg border border-stone-200 dark:border-dark-border">
-                Top 20 Pioneers
+                Top 20 Explorers
               </span>
             </div>
           </div>
@@ -294,7 +393,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
                   <tr>
                     <td colSpan={3} className="py-12 text-center text-brand-muted dark:text-dark-muted font-mono text-xs">
                       <div className="inline-block animate-spin rounded-full h-6 w-6 border-2 border-brand-green border-t-transparent mb-2" />
-                      <div>Loading pioneer leaderboard...</div>
+                      <div>Loading explorer leaderboard...</div>
                     </td>
                   </tr>
                 ) : (
@@ -329,7 +428,9 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
                           )}
                         </td>
                         <td className="py-4 px-6 font-medium flex items-center gap-2">
-                          <span>{entry.name}</span>
+                          <span className="font-semibold uppercase tracking-wide">
+                            {entry.name.toUpperCase()}
+                          </span>
                           {isUser && (
                             <span className="text-[10px] bg-brand-green text-black font-mono font-bold px-2 py-0.5 rounded-full uppercase">
                               You
@@ -351,7 +452,7 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
         </section>
 
         {/* Position Callout Directly Beneath the Leaderboard */}
-        <div className="bg-gradient-to-r from-stone-900 to-black dark:from-[#181b16] dark:to-[#121411] border border-stone-800 dark:border-dark-border text-white rounded-2xl p-6 sm:p-7 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left mb-10">
+        <div className="bg-gradient-to-r from-stone-900 to-black dark:from-[#181b16] dark:to-[#121411] border border-stone-800 dark:border-dark-border text-white rounded-2xl p-6 sm:p-7 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left mb-6">
           <div>
             <div className="text-xs font-mono uppercase tracking-wider text-brand-gold font-bold mb-1">
               Your Current Status
@@ -370,6 +471,14 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
           >
             {copied ? 'Copied Link!' : 'Boost Your Rank'}
           </button>
+        </div>
+
+        {/* Raffle Draw Policy Notice */}
+        <div className="max-w-2xl mx-auto mb-10 p-4 sm:p-5 rounded-2xl bg-stone-100 dark:bg-dark-card border border-stone-200 dark:border-dark-border text-center">
+          <p className="text-xs sm:text-sm text-brand-muted dark:text-dark-muted leading-relaxed">
+            <span className="font-semibold text-brand-dark dark:text-dark-text">Note: </span>
+            If a tier’s minimum isn’t met, everybody on the leaderboard will be entered into a raffle draw and they will be awarded anonymously.
+          </p>
         </div>
 
         {/* Back to Home Button */}

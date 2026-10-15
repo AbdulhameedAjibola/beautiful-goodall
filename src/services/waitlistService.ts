@@ -91,7 +91,7 @@ function normalizeLeaderboardData(raw: unknown[]): LeaderboardEntry[] {
     if (Array.isArray(item)) {
       return {
         rank: index + 1,
-        name: String(item[0] || `Pioneer #${index + 1}`),
+        name: String(item[0] || `Explorer #${index + 1}`).toUpperCase(),
         referrals: Number(item[1] || 0),
       };
     }
@@ -104,7 +104,7 @@ function normalizeLeaderboardData(raw: unknown[]): LeaderboardEntry[] {
         obj.FullName ||
         obj.userName ||
         obj.user ||
-        `Pioneer #${index + 1}`;
+        `Explorer #${index + 1}`;
       const referrals = Number(
         obj.referrals ??
           obj.Referrals ??
@@ -120,13 +120,13 @@ function normalizeLeaderboardData(raw: unknown[]): LeaderboardEntry[] {
       );
       return {
         rank: isNaN(rank) ? index + 1 : rank,
-        name: String(name),
+        name: String(name).toUpperCase(),
         referrals: isNaN(referrals) ? 0 : referrals,
       };
     }
     return {
       rank: index + 1,
-      name: String(item),
+      name: String(item).toUpperCase(),
       referrals: 0,
     };
   });
@@ -308,26 +308,26 @@ export async function fetchLeaderboardAndPosition(
   const userName = stored.name || 'You';
 
   const defaultTop20: LeaderboardEntry[] = [
-    { rank: 1, name: 'Chidi Okafor', referrals: 64 },
-    { rank: 2, name: 'Amina Bello', referrals: 58 },
-    { rank: 3, name: 'Tunde Adeyemi', referrals: 49 },
-    { rank: 4, name: 'Ngozi Eze', referrals: 42 },
-    { rank: 5, name: 'Kwame Mensah', referrals: 37 },
-    { rank: 6, name: 'Zainab Abubakar', referrals: 33 },
-    { rank: 7, name: 'Wanjiku Kamau', referrals: 29 },
-    { rank: 8, name: 'Emeka Nwosu', referrals: 26 },
-    { rank: 9, name: 'Fatima Sanusi', referrals: 24 },
-    { rank: 10, name: 'Babatunde Fash', referrals: 21 },
-    { rank: 11, name: 'Kofi Asare', referrals: 19 },
-    { rank: 12, name: 'Blessing Okoro', referrals: 17 },
-    { rank: 13, name: 'Damilola Pratt', referrals: 15 },
-    { rank: 14, name: `${userName} (You)`, referrals: 12, isCurrentUser: true },
-    { rank: 15, name: 'Yusuf Garba', referrals: 11 },
-    { rank: 16, name: 'Chioma Adebayo', referrals: 9 },
-    { rank: 17, name: 'Oluwaseun Vance', referrals: 8 },
-    { rank: 18, name: 'Adaeze Obi', referrals: 7 },
-    { rank: 19, name: 'Mustapha Sani', referrals: 6 },
-    { rank: 20, name: 'Halima Danjuma', referrals: 5 },
+    { rank: 1, name: 'CHIDI OKAFOR', referrals: 64 },
+    { rank: 2, name: 'AMINA BELLO', referrals: 58 },
+    { rank: 3, name: 'TUNDE ADEYEMI', referrals: 49 },
+    { rank: 4, name: 'NGOZI EZE', referrals: 42 },
+    { rank: 5, name: 'KWAME MENSAH', referrals: 37 },
+    { rank: 6, name: 'ZAINAB ABUBAKAR', referrals: 33 },
+    { rank: 7, name: 'WANJIKU KAMAU', referrals: 29 },
+    { rank: 8, name: 'EMEKA NWOSU', referrals: 26 },
+    { rank: 9, name: 'FATIMA SANUSI', referrals: 24 },
+    { rank: 10, name: 'BABATUNDE FASH', referrals: 21 },
+    { rank: 11, name: 'KOFI ASARE', referrals: 19 },
+    { rank: 12, name: 'BLESSING OKORO', referrals: 17 },
+    { rank: 13, name: 'DAMILOLA PRATT', referrals: 15 },
+    { rank: 14, name: `${userName.toUpperCase()} (YOU)`, referrals: 12, isCurrentUser: true },
+    { rank: 15, name: 'YUSUF GARBA', referrals: 11 },
+    { rank: 16, name: 'CHIOMA ADEBAYO', referrals: 9 },
+    { rank: 17, name: 'OLUWASEUN VANCE', referrals: 8 },
+    { rank: 18, name: 'ADAEZE OBI', referrals: 7 },
+    { rank: 19, name: 'MUSTAPHA SANI', referrals: 6 },
+    { rank: 20, name: 'HALIMA DANJUMA', referrals: 5 },
   ];
 
   return {

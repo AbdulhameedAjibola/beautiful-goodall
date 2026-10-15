@@ -8,12 +8,14 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-brand-border/70 dark:border-dark-border">
           {/* Left Brand & Tagline */}
           <div className="md:col-span-5 flex flex-col items-start">
-            <a href="#" className="mb-4">
-              <img
-                src={levoAssets.primaryLogo}
-                alt="Levo"
-                className="h-8 w-auto object-contain filter dark:brightness-110"
-              />
+            <a href="#" className="inline-block mb-4">
+              <div className="inline-flex p-1 px-2.5 sm:px-3 sm:py-1.5 rounded-xl transition-all dark:bg-white/95 dark:shadow-[0_2px_12px_rgba(0,0,0,0.35)] dark:border dark:border-white/20">
+                <img
+                  src={levoAssets.primaryLogo}
+                  alt="Levo"
+                  className="h-7 w-auto object-contain"
+                />
+              </div>
             </a>
             <p className="text-sm text-brand-muted dark:text-dark-muted max-w-sm leading-relaxed">
               The fitness and nutrition companion engineered for Nigerian and African meals. Eat your culture, build consistency, and thrive.
