@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useTheme } from '../context/ThemeContext';
 import { levoAssets } from '../data/levoData';
 import {
   fetchLeaderboardAndPosition,
@@ -22,7 +21,6 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
   onNavigateHome,
   initialUserData,
 }) => {
-  const { theme, toggleTheme } = useTheme();
   const [userData, setUserData] = useState(() => {
     if (initialUserData && initialUserData.refCode) {
       return initialUserData;
@@ -121,42 +119,9 @@ export const WaitlistSuccessPage: React.FC<WaitlistSuccessPageProps> = ({
           </button>
 
           <div className="flex items-center gap-3">
-            {/* Theme Toggle Button */}
-            <button
-              onClick={toggleTheme}
-              aria-label="Toggle dark and light mode"
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-stone-100 dark:bg-dark-card border border-stone-200 dark:border-dark-border text-brand-dark dark:text-dark-text text-xs font-mono font-medium hover:bg-stone-200 dark:hover:bg-dark-elevated transition-all"
-            >
-              {theme === 'dark' ? (
-                <>
-                  <svg className="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                    />
-                  </svg>
-                  <span>Light</span>
-                </>
-              ) : (
-                <>
-                  <svg className="w-4 h-4 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                    />
-                  </svg>
-                  <span>Dark</span>
-                </>
-              )}
-            </button>
-
             <button
               onClick={onNavigateHome}
-              className="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl bg-stone-100 dark:bg-dark-card border border-stone-200 dark:border-dark-border text-xs font-semibold hover:bg-stone-200 dark:hover:bg-dark-elevated transition-colors"
+              className="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-stone-100 dark:bg-dark-card border border-stone-200 dark:border-dark-border text-xs font-semibold hover:bg-stone-200 dark:hover:bg-dark-elevated transition-colors"
             >
               Back to Home
             </button>

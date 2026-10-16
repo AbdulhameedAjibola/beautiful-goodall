@@ -8,7 +8,7 @@ export const Features: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-2xl mb-10 text-left">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark dark:text-dark-text leading-tight">
-            Everything you need to eat well and thrive.
+            What Levo brings to you
           </h2>
         </div>
 

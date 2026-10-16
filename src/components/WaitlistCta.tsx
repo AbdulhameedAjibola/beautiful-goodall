@@ -22,7 +22,7 @@ export const WaitlistCta: React.FC<WaitlistCtaProps> = ({ onOpenWaitlist }) => {
 
       <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center relative z-10">
         <h2 className="text-3xl sm:text-5xl font-extrabold font-sora text-white leading-tight mb-8">
-          Start eating well without losing your favorite meals.
+          Join the waitlist now
         </h2>
 
         {/* Quick Email Trigger Form */}
@@ -46,7 +46,7 @@ export const WaitlistCta: React.FC<WaitlistCtaProps> = ({ onOpenWaitlist }) => {
         </form>
 
         <p className="text-xs text-stone-400 dark:text-dark-muted mt-4 font-mono">
-          No spam. Only high-touch early invitations and updates.
+          No spam. Get notified once levo launches
         </p>
       </div>
     </section>
